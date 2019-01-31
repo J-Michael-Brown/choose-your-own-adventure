@@ -24,6 +24,8 @@ export class AppComponent implements OnInit {
     this.player = new Player(this.tempName);
     this.playersService.addPlayer(this.player);
     this.playersService.assignCurrentPlayer(this.player);
+    console.log('app component: '+this.player.name);
+    console.log('service: '+this.playersService.currentPlayer.name);
   }
 
 }

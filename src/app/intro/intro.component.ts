@@ -11,7 +11,7 @@ import { Player } from '../models/player.model';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-  currentPlayer: Player;
+  currentPlayer: any;
 
   constructor(private playersService: PlayersService) { }
 

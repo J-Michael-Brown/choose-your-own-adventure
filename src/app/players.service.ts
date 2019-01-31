@@ -23,8 +23,8 @@ export class PlayersService {
     return this.currentPlayer;
   }
 
-  getPlayerById(playerId: string) {
-    return this.playerDb.object('players/' + playerId);
+  getPlayerById(playerKey: string) {
+    return this.playerDb.object('players/' + playerKey);
   }
 
   assignCurrentPlayer(player: Player){

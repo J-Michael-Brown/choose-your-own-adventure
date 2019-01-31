@@ -3,13 +3,12 @@
 <h3>Score: <span>{{score}}</span></h3>
 <h3>Name: <span>{{name}}</span></h3>
 <div *ngIf="!name">
-  <form class="" action="index.html" method="post">
+  <form>
     <p>New Name: {{tempName}}</p>
     <input [(ngModel)]="tempName" name="tempName" id="temp-name" type="text">
     <button type="submit" (click)="createPlayer()" name="button">Add Name</button>
   </form>
 </div>
 
-<div *ngIf="player">
-  <router-outlet></router-outlet>
-</div>
+
+<router-outlet></router-outlet>

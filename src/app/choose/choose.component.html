@@ -1,0 +1,9 @@
+<p>
+  choose works!
+</p>
+<dl>
+  <div *ngFor="let player of players | async" (click)="goToIntro(player)">
+    <dt>{{player.name}}</dt>
+    <dd>{{player.score}}</dd>
+  </div>
+</dl>

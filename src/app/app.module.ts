@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { PoliceStationComponent } from './police-station/police-station.component';
 import { OrphanageComponent } from './orphanage/orphanage.component';
+import { ChooseComponent } from './choose/choose.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     AppComponent,
     IntroComponent,
     PoliceStationComponent,
-    OrphanageComponent
+    OrphanageComponent,
+    ChooseComponent
   ],
   imports: [
     BrowserModule,
